@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <!-- header -->
+  <div class="container">
+    <div class="div1">
+      <div class="d-flex flex-row mb-3 justify-content-evenly align-items-center ms-3 me-3">
+        <!-- location -->
+        <div class="p-2">
+          <i class="fa-solid fa-location-dot text-warning "></i>
+          <span class="ms-2">123 street, New York</span>
+        </div>
+
+        <!-- email -->
+        <div class="p-2 flex-grow-1">
+          <i class="fa-solid fa-envelope text-warning"></i>
+          <span class="ms-2 "><a href="#">email@example.com</a></span>
+        </div>
+
+        <!-- breadcrumbs -->
+        <div class="p-2">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-3">
+              <li class="breadcrumb-item"><a href="#">Privacy Policies</a></li>
+              <li class="breadcrumb-item"><a href="#">Terms of Use</a></li>
+              <li class="breadcrumb-item"><a href="#">Sales and Refund</a></li>
+            </ol>
+          </nav>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1 ms-5 fw-bold flex-grow-1 align-items-center" href="#"
+          style="color: #81C408;">Fruitables</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-5">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop Details</a>
+            </li>
+
+            <!-- pages dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cart</a></li>
+                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                <li><a class="dropdown-item" href="#">404 Page</a></li>
+              </ul>
+            </li>
+
+            <!-- contacts -->
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+
+            <!-- search -->
+            <li class="nav-item">
+              <a class="nav-link ms-5">
+                <input class="form-control me-2" type="search" aria-label="Search" placeholder="&#xf002;"
+                  style="font-family: arial,fontawesome;">
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-bag-shopping fs-3" style="color: #81C408;"></i>
+                <sup class="fs-5">0</sup>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-user fs-3" style="color: #81C408;"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="background-image: url('Images/hero-img.jpg');">
+      <div class="d-flex flex-row mb-3 justify-content-evenly align-items-center">
+
+        <div class="p-2">
+          <h3 class="text-warning">100% organic foods</h3>
+          <h1 style="color: #81C408;" class="display-3 fw-bold">Organic Veggies & Fruits Foods</h1>
+
+          <!-- search bar -->
+          <div class="position-relative w-50 mt-5">
+            <input type="text" class="form-control rounded-pill border border-warning p-3 border-4"
+              placeholder="Search">
+
+            <!-- submit now button -->
+            <div class="position-absolute top-50 end-0 translate-middle-y">
+              <button class="btn rounded-pill text-white border border-warning btn1 p-3 border-4" type="button">Submit
+                now
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- carousel -->
+        <div class="p-2 w-50 h-100">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <!-- carousel item1 -->
+              <div class="carousel-item active">
+                <div class="card text-bg-warning border-0">
+                  <img src="Images/hero-img-1.png" class="card-img w-100 h-100">
+                  <div class="card-img-overlay text-center">
+                    <button type="button" class="btn btn-warning position-absolute start-50 top-50 translate-middle
+                  text-white btn-lg bg-opacity-75">Fruits</button>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- carousel item2 -->
+              <div class="carousel-item">
+                <div class="card text-bg-dark border-0">
+                  <img src="Images/hero-img-2.jpg" class="card-img w-100 h-100">
+                  <div class="card-img-overlay text-center">
+                    <button type="button"
+                      class="btn btn-warning position-absolute start-50 top-50 translate-middle">Vegetables</button>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- arrow buttons -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+      <div class="col">
+        <div class="card h-100 p-3 bg-light border-0 rounded">
+
+          <div class="h-50 w-50 text-bg-warning text-white rounded-circle p-4 -1 text-center m-auto">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+
+          <i class="fa-solid fa-caret-down text-warning display-3 text-center" style="margin-top: -35px;"></i>
+
+          <div class="card-body text-center">
+            <h4 class="card-title">Free Shipping</h4>
+            <p class="card-text text-secondary">Free on order over $300</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 bg-light border-0">
+
+          <div class="h-50 w-50 text-bg-warning text-white rounded-circle p-4 -1 text-center m-auto">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <i class="fa-solid fa-caret-down text-warning display-3 text-center" style="margin-top: -35px;"></i>
+
+          <div class="card-body">
+            <h5 class="card-title">Security Payment</h5>
+            <p class="card-text">100% Security Payment</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 bg-light border-0">
+
+          <div class="h-50 w-50 text-bg-warning text-white rounded-circle p-4 -1 text-center m-auto">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          </div>
+          <i class="fa-solid fa-caret-down text-warning display-3 text-center" style="margin-top: -35px;"></i>
+
+          <div class="card-body">
+            <h5 class="card-title">30 Day Return</h5>
+            <p class="card-text">30 Day Guaranteed Raturn</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 bg-light border-0">
+
+          <div class="h-50 w-50 text-bg-warning text-white rounded-circle p-4 -1 text-center m-auto">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <i class="fa-solid fa-caret-down text-warning display-3 text-center" style="margin-top: -35px;"></i>
+
+          <div class="card-body">
+            <h5 class="card-title">24/7 Support</h5>
+            <p class="card-text">Support Every Time Fast</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Our Organic Products -->
+  <div class="container mt-4">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <h1>Our Organic Products</h1>
+      </li>
+      <li class="nav-item " role="presentation">
+        <button class="nav-link active rounded-pill bg-light text-dark" id="pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All
+          Products</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill bg-light text-dark" id="pills-profile-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-fruits"
+          aria-selected="false">Fruits</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill bg-light text-dark" id="pills-contact-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-vegetables"
+          aria-selected="false">Vegetables</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill bg-light text-dark" id="pills-disabled-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-bread"
+          aria-selected="false">Breads</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill bg-light text-dark" id="pills-meat-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-meat" type="button" role="tab" aria-controls="pills-meat"
+          aria-selected="false">Meat</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">
+        <!-- All Products -->
+        <div class="row row-cols-1 row-cols-md-4 g-4 products">
+
+        </div>
+        <!-- End of All Products -->
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="row row-cols-1 row-cols-md-4 g-4 fruits">
+
+
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <div class="row row-cols-1 row-cols-md-4 g-4 veges">
+
+
+
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+        <div class="row row-cols-1 row-cols-md-4 g-4 bread">
+
+
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-meat" role="tabpanel" aria-labelledby="pills-meat-tab" tabindex="0">
+        <div class="row row-cols-1 row-cols-md-4 g-4 meat">
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- offers -->
+  <div class="container">
+    <div class="card-group gap-4 mt-4">
+      <!-- 1 st-->
+      <div class="position-relative">
+        <div class="card rounded border-warning" style="width: 22rem;">
+          <img src="Images/featur-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-warning p-5">
+
+          </div>
+        </div>
+        <div class="position-absolute top-50 start-50 translate-middle rounded p-4 text-center w-75" style="background-color: #81C408;">
+          <h4 class="text-white">Fresh Apples</h4>
+          <h1>20% OFF</h1>
+
+        </div>
+      </div>
+
+      <!-- 2nd-->
+      <div class="position-relative">
+      <div class="card rounded border-secondary" style="width: 22rem;">
+          <img src="Images/featur-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-secondary p-5">
+
+          </div>
+          <div class="position-absolute top-50 start-50 translate-middle rounded text-center p-3 bg-white w-75"
+            style="background-color: #81C408;">
+            <h4 class="text-success">tasty Fruits</h4>
+            <h1>Free Delivery</h1>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd-->
+      <div class="position-relative">
+      <div class="card rounded border-success" style="width: 22rem;">
+          <img src="Images/featur-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-warning p-5">
+
+          </div>
+
+          <div class="position-absolute top-50 start-50 translate-middle text-center rounded p-4 w-75"
+            style="background-color: #81C408;">
+            <h4 class="text-white">Exotic Vegetables</h4>
+            <h1>Discount 30$</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- javascript -->
+<script src="products.js">
+
+</script>
