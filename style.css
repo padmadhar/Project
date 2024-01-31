@@ -73,3 +73,17 @@ width: 20px;
     background-color: orange !important;
     color: white !important;
 }
+.slider1 img:hover
+{
+transform: scale(1.1,1.1);
+transition: 1s;
+}
+.slider1 .card
+{
+    overflow: hidden;
+    border: #81C408 1px solid;
+}
+.slider1 .card:hover
+{
+    box-shadow: 2px;
+}
