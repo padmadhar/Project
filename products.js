@@ -238,3 +238,67 @@ function displaymeat()
     })
 }
 displaymeat()
+
+let bestprodel=document.querySelector('.bestprod')
+console.log(bestprodel)
+function displaybestprod()
+{
+  items.slice(0,6).map((bestprod)=>
+  {
+    bestprodel.innerHTML+=`<div class="col">
+        <div class="card mb-3 rounded bg-light" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src=${bestprod.image} class="img-fluid rounded-circle" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">${bestprod.name}</h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-star" style="color: #81C408;"></i>
+                  <i class="fa-solid fa-star" style="color: #81C408;"></i>
+                  <i class="fa-solid fa-star" style="color: #81C408;"></i>
+                  <i class="fa-solid fa-star" style="color: #81C408;"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </p>
+                <p class="card-text"><small class="text-body-secondary">${bestprod.price}</small></p>
+                <button type="button" class="btn btn-outline-warning text-success rounded-pill">
+                  <i class="fa-solid fa-bag-shopping me-2"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>`
+  })
+}
+displaybestprod()
+
+let bestprodel1=document.querySelector('.bestprods1')
+function displaybestprod1()
+{
+  items.slice(0,4).map((prod)=>{
+    bestprodel1.innerHTML+=`
+    <div class="col">
+          <div class="card">
+            <img src=${prod.image} class="card-img-top h-75 w-100" alt="...">
+            <div class="card-body text-center">
+              <h4 class="card-title">${prod.name}</h4>
+              <p class="fs-5">
+              <i class="fa-solid fa-star" style="color: #81C408;"></i>
+                  <i class="fa-solid fa-star" style="color: #81C408;"></i>
+                  <i class="fa-solid fa-star" style="color: #81C408;"></i>
+                  <i class="fa-solid fa-star" style="color: #81C408;"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+              </p>
+              <h5>$${prod.price} / kg</h5>
+              <button type="button" class="btn btn-outline-warning text-success rounded-pill">
+                <i class="fa-solid fa-bag-shopping me-2"></i> Add to cart
+              </button>
+            </div>
+          </div>
+        </div>`
+})
+}
+displaybestprod1()
